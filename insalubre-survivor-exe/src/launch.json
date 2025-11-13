@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Rodar jogo (CLI)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/insalubre_survivor/main.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Abrir .exe (Windows)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/insalubre_survivor/main.py",
+      "console": "integratedTerminal",
+      "args": ["--exe", "insalubre-survivor.exe"]
+    }
+  ]
+}

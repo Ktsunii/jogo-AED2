@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./insalubre-survivor-exe/src/insalubre_survivor"
+    ]
+}
