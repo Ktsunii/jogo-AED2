@@ -1,0 +1,51 @@
+<%- include('../layouts/header', { pageTitle: 'Ranking de Sobreviventes' }) %>
+
+<main class="container my-5">
+    <h1 class="text-center mb-4">
+        <h1 class="text-center mb-4">
+    <img src="/images/-Ranking-de-Sobreviventes-13-11-2025.gif" alt="Ranking de Sobreviventes - TOP 10 AVL" class="img-fluid" style="max-height: 100px;">
+</h1>
+    <p class="text-center text-muted">
+        Pontuação e Métricas obtidas através da travessia in-order da Árvore AVL.
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-dark table-striped table-hover align-middle">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome do Jogador</th>
+                    <th scope="col" class="text-end">Pontuação Recorde (Almas)</th>
+                    <th scope="col" class="text-end">Eventos Superados</th>
+                    <th scope="col" class="text-end">Chefes Derrotados</th>
+                    <th scope="col" class="text-end">Total de AVLs</th>
+                    <th scope="col" class="text-end">Total de Mortes (☠️)</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <% if (ranking && ranking.length > 0) { %>
+                    <% ranking.slice(0, 10).forEach((jogador, index) => { %>
+                        <tr>
+                            <th scope="row"><%= index + 1 %></th>
+                            <td><%= jogador.nome_jogador %></td>
+                            <td class="text-end"><strong><%= jogador.pontuacao_recorde.toLocaleString() %></strong></td>
+                            <td class="text-end"><%= jogador.record_eventos %></td>
+                            <td class="text-end"><%= jogador.chefes_derrotados %></td>
+                            <td class="text-end"><%= jogador.total_avls %></td>
+                            <td class="text-end"><%= jogador.contador_mortes %></td>
+                        </tr>
+                    <% }) %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="7" class="text-center text-muted">Nenhum jogador registrado no ranking ainda...</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<% /* 3. INCLUI footer.ejs (Fecha </body> e </html>)
+*/ %>
+<%- include('../layouts/footer') %>
