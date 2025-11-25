@@ -1,0 +1,21 @@
+[
+    {
+        "nome_jogador": "Seraphim",
+        "pontuacao_recorde": 5200,
+        "historico_avls": [5200, 3100, 4000],
+        "contador_mortes": 2,
+        "record_eventos": 45,
+        "chefes_derrotados": 5,
+        "total_avls": 3
+    },
+    {
+        "nome_jogador": "Dreadnought",
+        "pontuacao_recorde": 4850,
+        "historico_avls": [4850, 2000, 1500, 3000],
+        "contador_mortes": 1,
+        "record_eventos": 38,
+        "chefes_derrotados": 4,
+        "total_avls": 4
+    }
+  
+]
