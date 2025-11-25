@@ -1,0 +1,66 @@
+/* public/css/style_ranking.css */
+
+body {
+    background-color: #0d0d0d; /* Fundo muito escuro */
+    color: #e0e0e0; /* Texto base claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px; /* Espaço para o rodapé */
+}
+
+.container {
+    background-color: #1a1a1a; /* Contêiner ligeiramente mais claro para contraste */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Título (Garante que a imagem ou texto seja centralizado) */
+h1 {
+    /* Cor transparente para o texto (se ainda for usado) e garantir que a imagem se destaque */
+    color: transparent !important; 
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center; /* Centraliza o conteúdo dentro do H1 */
+}
+
+/* Estilo para a imagem dentro do H1 (para o GIF) */
+h1 img {
+    display: block; /* Garante que a imagem se comporte como bloco */
+    margin: 0 auto; /* Centraliza a imagem dentro do <h1> */
+    max-width: 100%;
+    max-height: 100px; /* Limite de altura para a imagem do título */
+}
+
+/* Ajuste para o cabeçalho da tabela Bootstrap (table-primary) */
+.table-primary {
+    --bs-table-bg: #004d4d; /* Fundo do cabeçalho (Ciano Escuro) */
+    --bs-table-border-color: #003333;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* Linhas da tabela (para dar um toque mais 'dark') */
+.table-dark {
+    --bs-table-bg: #252525; 
+    --bs-table-striped-bg: #1f1f1f; /* Cor das linhas alternadas */
+    --bs-table-hover-bg: #303030; /* Efeito hover */
+    border-color: #333333;
+}
+
+/* Estilo para a pontuação em destaque */
+.table td strong {
+    color: #e6e600; /* Dourado/Amarelo para a pontuação recorde */
+    font-size: 1.1em;
+}
+
+/* Ajuste para o texto de descrição que estava muito escuro */
+.text-muted {
+    color: #aaaaaa !important; /* Torna o texto mais visível contra o fundo escuro */
+}
+
+/* Alinhamento de colunas pequenas */
+.text-end {
+    font-weight: 500;
+}
